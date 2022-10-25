@@ -6,6 +6,31 @@ $footer-bgcolor: #ffaec0;
 // font size
 $para-fontsize: 15px;
 // button variable
+// button extend option
+.btn{
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.btn-download{
+    @extend .btn;
+}
+.btn-learnmore{
+    @extend .btn;
+    background: #f1b186;
+}
+
+.btn-learnmore:hover{
+    background: white;
+}
+.btn-download:hover{
+    background: white;
+}
 // mixin creation with parameter
 @mixin para-style($size, $align) {
     font-size: $size;

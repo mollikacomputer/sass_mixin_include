@@ -1,3 +1,25 @@
+.btn, .btn-learnmore, .btn-download {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.btn-learnmore {
+  background: #f1b186;
+}
+
+.btn-learnmore:hover {
+  background: white;
+}
+
+.btn-download:hover {
+  background: white;
+}
+
 #education p {
   font-size: 20px;
   text-align: justify;
