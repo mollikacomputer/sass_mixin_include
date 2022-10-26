@@ -1,3 +1,8 @@
+// @each
+@each $color in red, green, blue{
+    .#{$color}-text {color:$color};
+}
+
 // row colum divided
 [class*="col-"]{
     float: left;
