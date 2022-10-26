@@ -1,3 +1,20 @@
+// row colum divided
+[class*="col-"]{
+    float: left;
+}
+
+// @for $i from 1 to 13 or
+// @for $i from 1 through 12 or
+
+@for $i from 1 through 12{
+    .col-#{$i} {width: 100% / 12 * $i }
+}
+
+.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
 // @if, @else if, @else
 @mixin setFontSize($value){
     @if($value == small){
@@ -13,6 +30,9 @@
         font-size: none;
     }
 }
+
+// @for loop for sass
+
 // color variable declaration
 $header-bgcolor: #ffab73;
 $main-bgcolor: #ffd384;
