@@ -1,5 +1,12 @@
 // @each
-@each $color in red, green, blue{
+// @each $color in red, green, blue{
+//     .#{$color}-text {color:$color};
+// }
+
+// 2nd way @each color variable
+$colors:(color1:red, color2:green, color3:blue);
+
+@each $key, $color in $colors{
     .#{$color}-text {color:$color};
 }
 
